@@ -7,9 +7,9 @@ Load your `.env` files easily into your nim application
 
 ```nim
   let envFile = """
-SEND_GRID_TOK = 12312aeabasd123sad12r54
-# COMMENTED = VALUE
-SEND_GRID_USER = root
+SEND_GRID_TOK=12312aeabasd123sad12r54
+# COMMENTED=VALUE
+SEND_GRID_USER=root
 """
   let envFilePath = getTempDir()/"testfile.env"
   writeFile(envFilePath, envFile)
